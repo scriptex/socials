@@ -35,12 +35,8 @@ yarn.lock
 .prettierignore
 
 # Config files
-.babelrc
 renovate.json
-tslint.json
-ts-config.json
-postcss.config.js
-webpack.config.js
+tsconfig.json
 _config.yml
 _.config.yml
 
