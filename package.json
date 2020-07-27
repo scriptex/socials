@@ -3,8 +3,7 @@
 	"version": "1.0.0",
 	"description": "A native web component: links to various social media with SVG icons support",
 	"scripts": {
-		"build": "tsc -p .",
-		"lint": "tslint -p tsconfig.json -c tslint.json index.ts"
+		"build": "tsc -p ."
 	},
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
