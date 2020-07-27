@@ -1,5 +1,5 @@
 {
-	"name": "socials",
+	"name": "@scriptex/socials",
 	"version": "1.0.0",
 	"description": "A native web component: links to various social media with SVG icons support",
 	"scripts": {
@@ -24,6 +24,6 @@
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"typescript": "^3.9.7"
+		"typescript": "3.9.7"
 	}
 }

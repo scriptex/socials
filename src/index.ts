@@ -5,92 +5,193 @@ type Link = {
 	title: string;
 };
 
-const links: Link[] = [
-	{
-		url: 'https://atanas.info',
-		title: 'Go to my website',
-		icon: 'logo',
-		svg: true
-	},
-	{
-		url: 'mailto:hi@atanas.info',
-		title: 'Send me an email',
-		icon: 'email',
-		svg: true
-	},
-	{
-		url: 'https://www.linkedin.com/in/scriptex/',
-		title: 'Find me on LinkedIn',
-		icon: 'linkedin',
-		svg: true
-	},
-	{
-		url: 'https://github.com/scriptex',
-		title: 'See my projects on Github',
-		icon: 'github',
-		svg: true
-	},
-	{
-		url: 'https://gitlab.com/scriptex',
-		title: 'See my projects on Gitlab',
-		icon: 'gitlab',
-		svg: true
-	},
-	{
-		url: 'https://twitter.com/scriptexbg',
-		title: 'Follow me on Twitter',
-		icon: 'twitter',
-		svg: true
-	},
-	{
-		url: 'https://www.npmjs.com/~scriptex',
-		title: 'See my packages on NPM',
-		icon: 'npm',
-		svg: true
-	},
-	{
-		url: 'https://www.youtube.com/user/scriptex',
-		title: 'See my videos on YouTube',
-		icon: 'youtube',
-		svg: true
-	},
-	{
-		url: 'https://stackoverflow.com/users/4140082/atanas-atanasov',
-		title: 'See my profile on StackOverflow',
-		icon: 'stackoverflow',
-		svg: true
-	},
-	{
-		url: 'https://codepen.io/scriptex/',
-		title: 'See my work on Codepen',
-		icon: 'codepen',
-		svg: true
-	},
-	{
-		url: 'https://profile.codersrank.io/user/scriptex',
-		title: 'See my profile on Codersrank',
-		icon: 'codersrank',
-		svg: true
-	},
-	{
-		url: 'https://sourcerer.io/scriptex',
-		title: 'See my profile on Sourcerer',
-		icon: 'https://sourcerer.io/icons/logo-sharing.svg',
-		svg: false
-	}
-];
-
-const style = document.createElement('style');
-const sprite = document.createElement('template');
-const template = document.createElement('template');
-
 class Socials extends HTMLElement {
-	static get observedAttributes(): string[] {
-		return ['list', 'inline'];
-	}
+	private color: string = this.theme || '#000';
+	private items: Link[] = [
+		{
+			url: 'https://atanas.info',
+			title: 'Go to my website',
+			icon: 'logo',
+			svg: true
+		},
+		{
+			url: 'mailto:hi@atanas.info',
+			title: 'Send me an email',
+			icon: 'email',
+			svg: true
+		},
+		{
+			url: 'https://www.linkedin.com/in/scriptex/',
+			title: 'Find me on LinkedIn',
+			icon: 'linkedin',
+			svg: true
+		},
+		{
+			url: 'https://github.com/scriptex',
+			title: 'See my projects on Github',
+			icon: 'github',
+			svg: true
+		},
+		{
+			url: 'https://gitlab.com/scriptex',
+			title: 'See my projects on Gitlab',
+			icon: 'gitlab',
+			svg: true
+		},
+		{
+			url: 'https://twitter.com/scriptexbg',
+			title: 'Follow me on Twitter',
+			icon: 'twitter',
+			svg: true
+		},
+		{
+			url: 'https://www.npmjs.com/~scriptex',
+			title: 'See my packages on NPM',
+			icon: 'npm',
+			svg: true
+		},
+		{
+			url: 'https://www.youtube.com/user/scriptex',
+			title: 'See my videos on YouTube',
+			icon: 'youtube',
+			svg: true
+		},
+		{
+			url: 'https://stackoverflow.com/users/4140082/atanas-atanasov',
+			title: 'See my profile on StackOverflow',
+			icon: 'stackoverflow',
+			svg: true
+		},
+		{
+			url: 'https://codepen.io/scriptex/',
+			title: 'See my work on Codepen',
+			icon: 'codepen',
+			svg: true
+		},
+		{
+			url: 'https://profile.codersrank.io/user/scriptex',
+			title: 'See my profile on Codersrank',
+			icon: 'codersrank',
+			svg: true
+		},
+		{
+			url: 'https://sourcerer.io/scriptex',
+			title: 'See my profile on Sourcerer',
+			icon: 'https://sourcerer.io/icons/logo-sharing.svg',
+			svg: false
+		}
+	];
 
-	private svg: string = `
-	<svg
+	private styleEl: HTMLStyleElement = document.createElement('style');
+	private sprite: HTMLTemplateElement = document.createElement('template');
+	private template: HTMLTemplateElement = document.createElement('template');
+
+	constructor() {
+		super();
+
+		this.render();
+
+		const shadowRoot = this.attachShadow({
+			mode: 'closed'
+		});
+
+		this.styleEl.innerHTML = `
+:host {
+	color: ${this.color};
+}
+
+ul {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	list-style: none outside none;
+}
+
+li {
+	padding: 0 0.325rem;
+}
+
+li a,
+li svg {
+	color: inherit;
+	display: block;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.svg-email {
+	width: 1.5rem;
+	height: 1.69rem;
+	fill: currentColor;
+}
+
+.svg-github,
+.svg-gitlab {
+	width: 1.5rem;
+	height: 1.63rem;
+	fill: currentColor;
+}
+
+.svg-twitter {
+	width: 1.5rem;
+	height: 1.38rem;
+	fill: currentColor;
+}
+
+.svg-npm {
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: #fff;
+	background-color: currentColor;
+	border-radius: 0.25rem;
+}
+
+.svg-stackoverflow {
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: currentColor;
+}
+
+.svg-youtube {
+	width: 3rem;
+	height: 1.5rem;
+	fill: currentColor;
+}
+
+.svg-linkedin {
+	width: 1.5rem;
+	height: 1.63rem;
+	fill: currentColor;
+}
+
+.svg-logo {
+	width: 1.75rem;
+	height: 1.75rem;
+	fill: currentColor;
+	stroke: currentColor;
+	stroke-width: 0.325rem;
+}
+
+.svg-codepen,
+.svg-google-plus {
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: currentColor;
+}
+
+.svg-codersrank {
+	width: 2.5rem;
+	height: 1.5rem;
+}
+`;
+
+		this.sprite.innerHTML = `
+<svg
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	aria-hidden="true"
@@ -189,190 +290,39 @@ class Socials extends HTMLElement {
 </svg>
 `;
 
-	private size: number = 24;
-	private items: Link[] = links;
-	private inline: boolean = true;
-
-	constructor() {
-		super();
-
-		this.render();
-
-		const shadowRoot = this.attachShadow({
-			mode: 'closed'
-		});
-
-		style.innerHTML = `
-		:host {
-			color: #000;
-		}
-
-		ul {
-			display: flex;
-			flex-flow: row wrap;
-			align-items: center;
-			justify-content: space-between;
-			padding: 0;
-			margin: 0;
-			list-style: none outside none;
-		}
-
-		li {
-			padding: 0 0.325rem;
-		}
-
-		li a,
-		li svg {
-			color: inherit;
-			display: block;
-		}
-
-		img {
-			vertical-align: middle;
-		}
-
-		.svg-email {
-			width: 1.5rem;
-			height: 1.69rem;
-			fill: currentColor;
-		}
-
-		.svg-github,
-		.svg-gitlab {
-			width: 1.5rem;
-			height: 1.63rem;
-			fill: currentColor;
-		}
-
-		.svg-twitter {
-			width: 1.5rem;
-			height: 1.38rem;
-			fill: currentColor;
-		}
-
-		.svg-npm {
-			width: 1.5rem;
-			height: 1.5rem;
-			fill: #fff;
-			background-color: currentColor;
-			border-radius: 0.25rem;
-		}
-
-		.svg-stackoverflow {
-			width: 1.5rem;
-			height: 1.5rem;
-			fill: currentColor;
-		}
-
-		.svg-youtube {
-			width: 3rem;
-			height: 1.5rem;
-			fill: currentColor;
-		}
-
-		.svg-linkedin {
-			width: 1.5rem;
-			height: 1.63rem;
-			fill: currentColor;
-		}
-
-		.svg-logo {
-			width: 1.75rem;
-			height: 1.75rem;
-			fill: currentColor;
-			stroke: currentColor;
-			stroke-width: 0.325rem;
-		}
-
-		.svg-codepen,
-		.svg-google-plus {
-			width: 1.5rem;
-			height: 1.5rem;
-			fill: currentColor;
-		}
-
-		.svg-codersrank {
-			width: 2.5rem;
-			height: 1.5rem;
-		}
-`;
-
-		sprite.innerHTML = this.svg;
-
-		shadowRoot.appendChild(style.cloneNode(true));
-		shadowRoot.appendChild(sprite.content.cloneNode(true));
-		shadowRoot.appendChild(template.content.cloneNode(true));
+		shadowRoot.appendChild(this.styleEl.cloneNode(true));
+		shadowRoot.appendChild(this.sprite.content.cloneNode(true));
+		shadowRoot.appendChild(this.template.content.cloneNode(true));
 	}
 
-	public attributeChangedCallback(name: string, prev: string, next: string): void {
-		if (prev !== next) {
-			console.log(`${name} changed from ${prev} to ${next}`);
-		}
+	get theme(): string {
+		return this.getAttribute('color') || '#000';
 	}
 
-	public connectedCallback(): void {
-		if (!this.items) {
-			this.items = links;
-		}
-
-		if (!this.inline) {
-			this.inline = true;
-		}
-	}
-
-	get links(): Link[] {
-		if (this.getAttribute('links')) {
-			return JSON.parse(this.getAttribute('links')!);
-		}
-
-		return links;
-	}
-
-	set links(list: Link[]) {
-		this.setAttribute('links', JSON.stringify(list));
-	}
-
-	get layout(): boolean {
-		return Boolean(this.getAttribute('inline'));
-	}
-
-	set layout(value: boolean) {
-		this.setAttribute('inline', value.toString());
-	}
-
-	get dimensions(): number {
-		return Number(this.size);
-	}
-
-	set dimensions(size: number) {
-		this.size = size;
+	set theme(color: string) {
+		this.setAttribute('color', color);
 	}
 
 	private render(): void {
-		template.innerHTML = `
+		this.template.innerHTML = `<ul>${this.renderList()}</ul>`;
+	}
 
-<ul>
-	${this.items
-		.map(
-			(item: Link) =>
-				`<li>
-				<a
-					href="${item.url}"
-					target="_blank"
-					rel="noopener noreferrer"
-					title="${item.title}"
-				>
-					${
-						item.svg
-							? `<svg class="svg-${item.icon}"><use xlink:href="#svg-${item.icon}"></use></svg>`
-							: `<img src="${item.icon}" alt="" width="${this.size}" loading="lazy" />`
-					}
-				</a>
-			</li>`
-		)
-		.join('\n')}
-</ul>
-		`;
+	private renderList(): string {
+		return this.items
+			.map(
+				(item: Link) => `<li>
+					<a href="${item.url}" target="_blank" rel="noopener noreferrer" title="${item.title}">
+						${this.renderIcon(item)}
+					</a>
+				</li>`
+			)
+			.join('\n');
+	}
+
+	private renderIcon(item: Link): string {
+		return item.svg
+			? `<svg class="svg-${item.icon}"><use xlink:href="#svg-${item.icon}"></use></svg>`
+			: `<img src="${item.icon}" alt="" width="24" loading="lazy" />`;
 	}
 }
 
