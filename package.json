@@ -1,0 +1,29 @@
+{
+	"name": "socials",
+	"version": "1.0.0",
+	"description": "A native web component: links to various social media with SVG icons support",
+	"scripts": {
+		"build": "tsc -p .",
+		"lint": "tslint -p tsconfig.json -c tslint.json index.ts"
+	},
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"keywords": [
+		"Socials",
+		"Social Links",
+		"SVG icons",
+		"Contacts",
+		"Contact Icons"
+	],
+	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
+	"repository": "https://github.com/scriptex/socials",
+	"bugs": {
+		"url": "https://github.com/scriptex/socials/issues",
+		"email": "scriptex.bg@gmail.com"
+	},
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"typescript": "^3.9.7"
+	}
+}
