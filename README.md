@@ -36,6 +36,16 @@ In your HTML/JSX markup:
 </div>
 ```
 
+If you're using React in TypeScript context, you need to extends the JSX `IntrinsicElements` interface so it knows `social-links` element exists.
+
+```typescript
+declare namespace JSX {
+	interface IntrinsicElements {
+		'social-links': any;
+	}
+}
+```
+
 Currently it includes the following:
 
 <div>

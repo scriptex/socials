@@ -1,6 +1,6 @@
 {
 	"name": "scriptex-socials",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "A native web component: links to various social media with SVG icons support",
 	"scripts": {
 		"svgo": "svgo -f static/images/svg --config=svgo.yml",

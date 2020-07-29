@@ -100,14 +100,14 @@ class Socials extends HTMLElement {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0;
 	margin: 0;
 	list-style: none outside none;
 }
 
 li {
-	padding: 0 0.325rem;
+	padding: 0.5rem 0.325rem;
 }
 
 li a,
@@ -164,7 +164,7 @@ li svg {
 }
 
 .svg-youtube {
-	width: 3rem;
+	width: 2rem;
 }
 
 .svg-logo {
