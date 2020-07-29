@@ -3,7 +3,16 @@
 	"version": "1.0.0",
 	"description": "A native web component: links to various social media with SVG icons support",
 	"scripts": {
-		"build": "tsc -p ."
+		"svgo": "svgo -f static/images/svg --config=svgo.yml",
+		"svg-sprite": "spritesh -q -i static/images/svg -o static/sprite.svg -p svg-",
+		"svg-minify": "html-minifier static/sprite.svg --collapse-whitespace -o static/sprite.svg",
+		"svg": "sh ./scripts/svg.sh",
+		"template": "ts-node ./scripts/template.ts",
+		"tsc": "tsc -p .",
+		"tsc:watch": "tsc -p . -w",
+		"prepare": "yarn svg && yarn template",
+		"build": "yarn prepare && yarn tsc",
+		"start": "yarn prepare && yarn tsc:watch"
 	},
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
@@ -23,6 +32,11 @@
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
+		"@types/node": "14.0.27",
+		"html-minifier": "4.0.0",
+		"spritesh": "1.2.1",
+		"svgo": "1.3.2",
+		"ts-node": "^8.10.2",
 		"typescript": "3.9.7"
 	}
 }
