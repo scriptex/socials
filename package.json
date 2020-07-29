@@ -1,5 +1,5 @@
 {
-	"name": "@scriptex/socials",
+	"name": "scriptex-socials",
 	"version": "1.0.0",
 	"description": "A native web component: links to various social media with SVG icons support",
 	"scripts": {
@@ -11,9 +11,10 @@
 		"readme": "ts-node ./scripts/readme.ts",
 		"tsc": "tsc -p .",
 		"tsc:watch": "tsc -p . -w",
-		"prepare": "yarn svg && yarn template && yarn readme",
-		"build": "yarn prepare && yarn tsc",
-		"start": "yarn prepare && yarn tsc:watch"
+		"pre": "yarn svg && yarn template && yarn readme",
+		"build": "yarn pre && yarn tsc",
+		"start": "yarn pre && yarn tsc:watch",
+		"prepare": "yarn build"
 	},
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",

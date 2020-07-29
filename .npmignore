@@ -41,3 +41,10 @@ _config.yml
 _.config.yml
 
 # Project specific
+.github
+
+.nowignore
+.npmignore
+.nvmrc
+.whitesource
+svgo.yml
