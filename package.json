@@ -8,9 +8,10 @@
 		"svg-minify": "html-minifier static/sprite.svg --collapse-whitespace -o static/sprite.svg",
 		"svg": "sh ./scripts/svg.sh",
 		"template": "ts-node ./scripts/template.ts",
+		"readme": "ts-node ./scripts/readme.ts",
 		"tsc": "tsc -p .",
 		"tsc:watch": "tsc -p . -w",
-		"prepare": "yarn svg && yarn template",
+		"prepare": "yarn svg && yarn template && yarn readme",
 		"build": "yarn prepare && yarn tsc",
 		"start": "yarn prepare && yarn tsc:watch"
 	},
