@@ -2,7 +2,7 @@
 
 > Links to various social media
 
-This is a native web component built with TypeScript with no dependencies which lists links to various social media profiles.
+This is a native web component built with TypeScript, with no dependencies, which lists links to various social medias.
 
 ## Install
 
@@ -22,7 +22,19 @@ In your JavaScript/TypeScript entry point:
 import 'scriptex-socials';
 ```
 
-In your HTML/JSX markup:
+You can also include the web component directly from **unpkg.com**:
+
+```javascript
+import('https://unpkg.com/scriptex-socials');
+```
+
+or 
+
+```html
+<script async src="https://unpkg.com/scriptex-socials"></script>
+```
+
+Then add the component in your HTML/JSX markup:
 
 ```html
 <social-links></social-links>
@@ -36,7 +48,11 @@ In your HTML/JSX markup:
 </div>
 ```
 
-If you're using React in TypeScript context, you need to extends the JSX `IntrinsicElements` interface so it knows `social-links` element exists.
+## React with TypeScript
+
+If you're using React with TypeScript, you need to extends the JSX `IntrinsicElements` interface so TypeScript knows that the `social-links` element exists.
+
+You can do so in a `custom.d.ts` file in your project's root folder. Don't forget to add that file in your `tsconfig.json`!
 
 ```typescript
 declare namespace JSX {
@@ -45,5 +61,7 @@ declare namespace JSX {
 	}
 }
 ```
+
+## Contents
 
 Currently it includes the following:
