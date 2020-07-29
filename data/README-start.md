@@ -29,7 +29,11 @@ In your HTML/JSX markup:
 
 <!-- or with custom color -->
 
-<social-links color="red"></social-links>
+<social-links style="color: red;"></social-links>
+
+<div style="background: black;">
+	<social-links style="color: white;"></social-links>
+</div>
 ```
 
 Currently it includes the following:
