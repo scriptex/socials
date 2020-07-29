@@ -8,7 +8,6 @@ type Link = {
 };
 
 class Socials extends HTMLElement {
-	private color: string = this.theme || '#000';
 	private items: Link[] = __links__;
 
 	private styleEl: HTMLStyleElement = document.createElement('style');
@@ -20,25 +19,14 @@ class Socials extends HTMLElement {
 
 		this.render();
 
-		const shadowRoot = this.attachShadow({
-			mode: 'closed'
-		});
-
-		this.styleEl.innerHTML = __style__;
+		const shadowRoot = this.attachShadow({ mode: 'open' });
 
 		this.sprite.innerHTML = __sprite__;
+		this.styleEl.innerHTML = __style__;
 
 		shadowRoot.appendChild(this.styleEl.cloneNode(true));
 		shadowRoot.appendChild(this.sprite.content.cloneNode(true));
 		shadowRoot.appendChild(this.template.content.cloneNode(true));
-	}
-
-	get theme(): string {
-		return this.getAttribute('color') || '#000';
-	}
-
-	set theme(color: string) {
-		this.setAttribute('color', color);
 	}
 
 	private render(): void {
