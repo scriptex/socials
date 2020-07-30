@@ -2,7 +2,7 @@
 
 > Links to various social media
 
-This is a native web component built with TypeScript with no dependencies which lists links to various social media profiles.
+This is a native web component built with TypeScript, with no dependencies, which lists links to various social medias.
 
 ## Install
 
@@ -22,7 +22,19 @@ In your JavaScript/TypeScript entry point:
 import 'scriptex-socials';
 ```
 
-In your HTML/JSX markup:
+You can also include the web component directly from **unpkg.com**:
+
+```javascript
+import('https://unpkg.com/scriptex-socials');
+```
+
+or 
+
+```html
+<script async src="https://unpkg.com/scriptex-socials"></script>
+```
+
+Then add the component in your HTML/JSX markup:
 
 ```html
 <social-links></social-links>
@@ -36,7 +48,11 @@ In your HTML/JSX markup:
 </div>
 ```
 
-If you're using React in TypeScript context, you need to extends the JSX `IntrinsicElements` interface so it knows `social-links` element exists.
+## React with TypeScript
+
+If you're using React with TypeScript, you need to extends the JSX `IntrinsicElements` interface so TypeScript knows that the `social-links` element exists.
+
+You can do so in a `custom.d.ts` file in your project's root folder. Don't forget to add that file in your `tsconfig.json`!
 
 ```typescript
 declare namespace JSX {
@@ -46,30 +62,32 @@ declare namespace JSX {
 }
 ```
 
+## Contents
+
 Currently it includes the following:
 
 <div>
-<a href="https://atanas.info" target="_blank"><img src="./assets/logo.svg" alt="Go to my website" width="24" align="top"> Go to my website</a>
+<a href="https://atanas.info" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/logo.svg" alt="Go to my website" width="24" align="top"> Go to my website</a>
 
-<a href="mailto:hi@atanas.info" target="_blank"><img src="./assets/email.svg" alt="Send me an email" width="24" align="top"> Send me an email</a>
+<a href="mailto:hi@atanas.info" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/email.svg" alt="Send me an email" width="24" align="top"> Send me an email</a>
 
-<a href="https://www.linkedin.com/in/scriptex/" target="_blank"><img src="./assets/linkedin.svg" alt="Find me on LinkedIn" width="24" align="top"> Find me on LinkedIn</a>
+<a href="https://www.linkedin.com/in/scriptex/" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/linkedin.svg" alt="Find me on LinkedIn" width="24" align="top"> Find me on LinkedIn</a>
 
-<a href="https://github.com/scriptex" target="_blank"><img src="./assets/github.svg" alt="See my projects on Github" width="24" align="top"> See my projects on Github</a>
+<a href="https://github.com/scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/github.svg" alt="See my projects on Github" width="24" align="top"> See my projects on Github</a>
 
-<a href="https://gitlab.com/scriptex" target="_blank"><img src="./assets/gitlab.svg" alt="See my projects on Gitlab" width="24" align="top"> See my projects on Gitlab</a>
+<a href="https://gitlab.com/scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/gitlab.svg" alt="See my projects on Gitlab" width="24" align="top"> See my projects on Gitlab</a>
 
-<a href="https://twitter.com/scriptexbg" target="_blank"><img src="./assets/twitter.svg" alt="Follow me on Twitter" width="24" align="top"> Follow me on Twitter</a>
+<a href="https://twitter.com/scriptexbg" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/twitter.svg" alt="Follow me on Twitter" width="24" align="top"> Follow me on Twitter</a>
 
-<a href="https://www.npmjs.com/~scriptex" target="_blank"><img src="./assets/npm.svg" alt="See my packages on NPM" width="24" align="top"> See my packages on NPM</a>
+<a href="https://www.npmjs.com/~scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/npm.svg" alt="See my packages on NPM" width="24" align="top"> See my packages on NPM</a>
 
-<a href="https://www.youtube.com/user/scriptex" target="_blank"><img src="./assets/youtube.svg" alt="See my videos on YouTube" width="24" align="top"> See my videos on YouTube</a>
+<a href="https://www.youtube.com/user/scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/youtube.svg" alt="See my videos on YouTube" width="24" align="top"> See my videos on YouTube</a>
 
-<a href="https://stackoverflow.com/users/4140082/atanas-atanasov" target="_blank"><img src="./assets/stackoverflow.svg" alt="See my profile on StackOverflow" width="24" align="top"> See my profile on StackOverflow</a>
+<a href="https://stackoverflow.com/users/4140082/atanas-atanasov" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/stackoverflow.svg" alt="See my profile on StackOverflow" width="24" align="top"> See my profile on StackOverflow</a>
 
-<a href="https://codepen.io/scriptex/" target="_blank"><img src="./assets/codepen.svg" alt="See my work on Codepen" width="24" align="top"> See my work on Codepen</a>
+<a href="https://codepen.io/scriptex/" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/codepen.svg" alt="See my work on Codepen" width="24" align="top"> See my work on Codepen</a>
 
-<a href="https://profile.codersrank.io/user/scriptex" target="_blank"><img src="./assets/codersrank.svg" alt="See my profile on Codersrank" width="24" align="top"> See my profile on Codersrank</a>
+<a href="https://profile.codersrank.io/user/scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/assets/codersrank.svg" alt="See my profile on Codersrank" width="24" align="top"> See my profile on Codersrank</a>
 
 <a href="https://sourcerer.io/scriptex" target="_blank"><img src="https://sourcerer.io/icons/logo-sharing.svg" alt="See my profile on Sourcerer" width="24" align="top"> See my profile on Sourcerer</a>
 </div>
