@@ -9,9 +9,10 @@
 		"svg": "sh ./scripts/svg.sh",
 		"template": "ts-node ./scripts/template.ts",
 		"readme": "ts-node ./scripts/readme.ts",
+		"prettier": "prettier --write src/index.ts",
 		"tsc": "tsc -p .",
 		"tsc:watch": "tsc -p . -w",
-		"pre": "yarn svg && yarn template && yarn readme",
+		"pre": "yarn svg && yarn template && yarn prettier && yarn readme",
 		"build": "yarn pre && yarn tsc",
 		"start": "yarn pre && yarn tsc:watch",
 		"prepare": "yarn build"
@@ -36,6 +37,7 @@
 	"devDependencies": {
 		"@types/node": "14.0.27",
 		"html-minifier": "4.0.0",
+		"prettier": "2.0.5",
 		"spritesh": "1.2.1",
 		"svgo": "1.3.2",
 		"ts-node": "8.10.2",
