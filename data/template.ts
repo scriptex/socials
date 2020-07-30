@@ -21,6 +21,7 @@ class Socials extends HTMLElement {
 
 		const shadowRoot = this.attachShadow({ mode: 'open' });
 
+		// prettier-ignore
 		this.sprite.innerHTML = __sprite__;
 		this.styleEl.innerHTML = __style__;
 
