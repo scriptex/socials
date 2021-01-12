@@ -72,12 +72,6 @@ class Socials extends HTMLElement {
 			title: 'See my profile on Codersrank',
 			icon: 'codersrank',
 			svg: true
-		},
-		{
-			url: 'https://sourcerer.io/scriptex',
-			title: 'See my profile on Sourcerer',
-			icon: 'https://sourcerer.io/icons/logo-sharing.svg',
-			svg: false
 		}
 	];
 
