@@ -1,3 +1,11 @@
+[![GitHub release](https://img.shields.io/github/release/scriptex/socials.svg)](https://github.com/scriptex/socials/releases/latest)
+[![GitHub issues](https://img.shields.io/github/issues/scriptex/socials.svg)](https://github.com/scriptex/socials/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/socials.svg)](https://github.com/scriptex/socials/commits/master)
+[![Build Status](https://travis-ci.org/scriptex/socials.svg?branch=master)](https://travis-ci.org/scriptex/socials)
+[![npm](https://img.shields.io/npm/dt/scriptex-socials.svg)](https://www.npmjs.com/package/scriptex-socials)
+[![npm](https://img.shields.io/npm/v/scriptex-socials.svg)](https://www.npmjs.com/package/scriptex-socials)
+[![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/socials/README.md)](https://github.com/scriptex/socials/)
+
 # Atanas Atanasov's Socials
 
 > Links to various social media
@@ -28,7 +36,7 @@ You can also include the web component directly from **unpkg.com**:
 import('https://unpkg.com/scriptex-socials');
 ```
 
-or 
+or
 
 ```html
 <script async src="https://unpkg.com/scriptex-socials"></script>

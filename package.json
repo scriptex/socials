@@ -3,7 +3,7 @@
 	"version": "1.3.0",
 	"description": "A native web component: links to various social media with SVG icons support",
 	"scripts": {
-		"svgo": "svgo -f static/images/svg --config=svgo.yml",
+		"svgo": "svgo -f static/images/svg",
 		"svg-sprite": "spritesh -q -i static/images/svg -o static/sprite.svg -p svg-",
 		"svg-minify": "html-minifier static/sprite.svg --collapse-whitespace -o static/sprite.svg",
 		"svg": "sh ./scripts/svg.sh",

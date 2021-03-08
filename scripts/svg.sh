@@ -2,7 +2,7 @@
 
 # Optimize SVG files using SVGO.
 # List of used plugins can be found in the svgo.yml file in the root of the project
-svgo -f assets --config=svgo.yml
+svgo -f assets
 
 # Generate a SVG sprite
 spritesh -q -i assets -o data/sprite.svg -p svg-

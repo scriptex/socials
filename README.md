@@ -36,7 +36,7 @@ You can also include the web component directly from **unpkg.com**:
 import('https://unpkg.com/scriptex-socials');
 ```
 
-or 
+or
 
 ```html
 <script async src="https://unpkg.com/scriptex-socials"></script>
