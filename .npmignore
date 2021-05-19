@@ -42,9 +42,13 @@ _.config.yml
 
 # Project specific
 .github
-
 .nowignore
 .npmignore
 .nvmrc
 .whitesource
-svgo.yml
+svgo.config.js
+assets
+data
+demo
+scripts
+styled-assets
