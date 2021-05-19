@@ -24,7 +24,7 @@ const links: Link[] = JSON.parse(fromBufferToString(readFileSync(linksFile)));
 const socials = links
 	.map((link: Link) => {
 		const src = link.svg
-			? `https://raw.githubusercontent.com/scriptex/socials/master/assets/${link.icon}.svg`
+			? `https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/${link.icon}.svg`
 			: link.icon;
 
 		return `<a href="${link.url}" target="_blank"><img src="${src}" alt="${link.title}" width="24" align="top"> ${link.title}</a>`;
