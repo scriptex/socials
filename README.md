@@ -96,6 +96,8 @@ Currently it includes the following:
 <a href="https://codepen.io/scriptex/" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/codepen.svg" alt="See my work on Codepen" width="24" align="top"> See my work on Codepen</a>
 
 <a href="https://profile.codersrank.io/user/scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/codersrank.svg" alt="See my profile on Codersrank" width="24" align="top"> See my profile on Codersrank</a>
+
+<a href="https://linktr.ee/scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/linktree.svg" alt="See the rest of my links on Linktree" width="24" align="top"> See the rest of my links on Linktree</a>
 </div>
 
 ## Support this project

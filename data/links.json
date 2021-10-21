@@ -64,5 +64,11 @@
 		"title": "See my profile on Codersrank",
 		"icon": "codersrank",
 		"svg": true
+	},
+	{
+		"url": "https://linktr.ee/scriptex",
+		"title": "See the rest of my links on Linktree",
+		"icon": "linktree",
+		"svg": true
 	}
 ]
