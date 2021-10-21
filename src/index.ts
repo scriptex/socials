@@ -137,6 +137,7 @@ li svg {
 .svg-npm,
 .svg-codepen,
 .svg-youtube,
+.svg-linktree,
 .svg-codersrank,
 .svg-google-plus,
 .svg-stackoverflow {
@@ -174,6 +175,10 @@ li svg {
 
 .svg-codersrank {
 	width: 2.5rem;
+}
+
+.svg-linktree {
+	width: 1.75rem;
 }
 `;
 
