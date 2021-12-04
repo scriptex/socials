@@ -37,7 +37,7 @@
 	"devDependencies": {
 		"@types/node": "16.11.11",
 		"html-minifier": "4.0.0",
-		"prettier": "2.5.0",
+		"prettier": "2.5.1",
 		"spritesh": "1.2.1",
 		"svgo": "2.8.0",
 		"ts-node": "10.4.0",
