@@ -35,7 +35,7 @@
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"@types/node": "16.11.28",
+		"@types/node": "16.11.29",
 		"html-minifier": "4.0.0",
 		"prettier": "2.6.2",
 		"spritesh": "1.2.1",
