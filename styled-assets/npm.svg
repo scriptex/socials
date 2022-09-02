@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55"><style>@media(prefers-color-scheme:light){path{fill:#000}}@media(prefers-color-scheme:dark){path{fill:#fff}}</style><path d="M0 0v55h55V0H0zm45 45h-7.02V17.02H27.5V45H10V10h35v35z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="450" viewBox="0 0 450 450">
+	<style>
+		@media(prefers-color-scheme:light) {
+			path {
+				fill: #000;
+				stroke: #fff
+			}
+		}
+
+		@media(prefers-color-scheme:dark) {
+			path {
+				fill: #fff;
+				stroke: #000
+			}
+		}
+	</style>
+	<path stroke-width="5"
+		d="M447.5,2.5 L447.5,447.5 L2.5,447.5 L2.5,2.5 L447.5,2.5 Z M370.681818,79.3181818 L79.3181818,79.3181818 L79.3181818,370.681818 L227.5,370.681818 L227.5,141.754545 L308.245455,141.754545 L308.245455,370.681818 L370.681818,370.681818 L370.681818,79.3181818 Z" />
+</svg>
