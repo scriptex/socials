@@ -1,10 +1,10 @@
-[![GitHub release](https://img.shields.io/github/release/scriptex/socials.svg)](https://github.com/scriptex/socials/releases/latest)
-[![GitHub issues](https://img.shields.io/github/issues/scriptex/socials.svg)](https://github.com/scriptex/socials/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/socials.svg)](https://github.com/scriptex/socials/commits/master)
-[![Build Status](https://travis-ci.org/scriptex/socials.svg?branch=master)](https://travis-ci.org/scriptex/socials)
-[![npm](https://img.shields.io/npm/dt/scriptex-socials.svg)](https://www.npmjs.com/package/scriptex-socials)
-[![npm](https://img.shields.io/npm/v/scriptex-socials.svg)](https://www.npmjs.com/package/scriptex-socials)
-[![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/socials/README.md)](https://github.com/scriptex/socials/)
+[![Travis CI](https://travis-ci.com/scriptex/socials.svg?branch=master)](https://travis-ci.com/scriptex/socials)
+[![Github Build](https://github.com/scriptex/socials/workflows/Build/badge.svg)](https://github.com/scriptex/socials/actions?query=workflow%3ABuild)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/34d3d75710534dc6a38c3584a1dcd068)](https://www.codacy.com/gh/scriptex/socials/dashboard?utm_source=github.com&utm_medium=referral&utm_content=scriptex/socials&utm_campaign=Badge_Grade)
+[![Codebeat Badge](https://codebeat.co/badges/d765a4c8-2c0e-44f2-89c3-fa364fdc14e6)](https://codebeat.co/projects/github-com-scriptex-socials-master)
+[![CodeFactor Badge](https://www.codefactor.io/repository/github/scriptex/socials/badge)](https://www.codefactor.io/repository/github/scriptex/socials)
+[![DeepScan grade](https://deepscan.io/api/teams/3574/projects/5257/branches/40799/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3574&pid=5257&bid=40799)
+[![Analytics](https://ga-beacon-361907.ew.r.appspot.com/UA-83446952-1/github.com/scriptex/socials/README.md?pixel)](https://github.com/scriptex/socials/)
 
 # Atanas Atanasov's Socials
 
@@ -99,7 +99,6 @@ Currently it includes the following:
 
 <a href="https://linktr.ee/scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/linktree.svg" alt="See the rest of my links on Linktree" width="24" align="top"> See the rest of my links on Linktree</a>
 </div>
-
 
 ## LICENSE
 

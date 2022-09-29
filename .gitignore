@@ -17,6 +17,4 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 
-# Project specific
-dist/
-demo/index.js
+dist
