@@ -1,7 +1,27 @@
 {
 	"name": "scriptex-socials",
-	"version": "1.6.0",
+	"version": "1.7.0",
 	"description": "A native web component: links to various social media with SVG icons support",
+	"keywords": [
+		"Socials",
+		"Social Links",
+		"SVG Social icons",
+		"SVG Social links"
+	],
+	"homepage": "https://socials.atanas.info",
+	"bugs": {
+		"url": "https://github.com/scriptex/socials/issues",
+		"email": "hi@atanas.info"
+	},
+	"license": "MIT",
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/socials"
+	},
 	"scripts": {
 		"svg": "svg-symbol-sprite -i assets -o data/sprite.svg -p svg-",
 		"template": "ts-node ./scripts/template.ts",
@@ -9,30 +29,16 @@
 		"prettier": "prettier --write src/index.ts",
 		"tsc": "tsc -p .",
 		"tsc:watch": "tsc -p . -w",
-		"pre": "yarn svg && yarn template && yarn prettier && yarn readme",
-		"build": "yarn pre && yarn tsc && cp dist/index.js demo/index.js",
+		"clear": "rm -rf dist && rm -rf demo/dist",
+		"copy": "cp -r dist demo",
+		"pre": "yarn clear && yarn svg && yarn template && yarn prettier && yarn readme",
+		"build": "yarn pre && yarn tsc && yarn copy",
 		"start": "yarn pre && yarn tsc:watch",
 		"prepare": "yarn build"
 	},
-	"main": "dist/index.js",
-	"typings": "dist/index.d.ts",
-	"keywords": [
-		"Socials",
-		"Social Links",
-		"SVG icons",
-		"Contacts",
-		"Contact Icons"
-	],
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"repository": "https://github.com/scriptex/socials",
-	"bugs": {
-		"url": "https://github.com/scriptex/socials/issues",
-		"email": "scriptex.bg@gmail.com"
-	},
-	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"@types/node": "18.7.14",
+		"@types/node": "18.7.23",
 		"prettier": "2.7.1",
 		"svg-symbol-sprite": "1.0.5",
 		"ts-node": "10.9.1",

@@ -3,23 +3,110 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Atanas Atanasov | Social links</title>
+
+		<title>Atanas Atanasov's Social links</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+		/>
+
+		<style>
+			body {
+				font-family: sans-serif;
+				font-size: 1rem;
+				line-height: 1.25;
+				margin: 0;
+			}
+
+			main {
+				max-width: 37.5rem;
+				padding: 1rem 0;
+				margin: auto;
+			}
+
+			p,
+			h1,
+			h2 {
+				margin: 0 0 1rem;
+			}
+
+			pre {
+				padding: 1rem;
+				overflow: auto;
+				background-color: #dfdfdf;
+			}
+
+			social-links {
+				display: block;
+				padding-bottom: 1rem;
+			}
+
+			div[style*='background'] social-links {
+				padding-top: 1rem;
+			}
+		</style>
 	</head>
 	<body>
-		<social-links></social-links>
+		<a
+			href="https://github.com/scriptex/socials"
+			title="See code on Github"
+			class="github-fork-ribbon"
+			data-ribbon="See code on Github"
+		>
+			See code on Github
+		</a>
 
-		<br />
-		<br />
+		<main>
+			<h1>Atanas Atanasov's Social links</h1>
 
-		<social-links style="color: red"></social-links>
+			<h2>Installation</h2>
 
-		<br />
-		<br />
+			<!-- prettier-ignore -->
+			<code>
+<pre>
+npm install scriptex-socials
 
-		<div style="background: black">
-			<social-links style="color: white"></social-links>
-		</div>
+# or
 
-		<script src="index.js"></script>
+yarn add scriptex-socials
+</pre>
+			</code>
+
+			<h2>Usage</h2>
+
+			<p>Default:</p>
+
+			<code>
+				<pre>&lt;social-links&gt;&lt;/social-links&gt;</pre>
+			</code>
+
+			<social-links></social-links>
+
+			<p>With custom <code>color</code>:</p>
+
+			<code>
+				<pre>&lt;social-links style=&quot;color: red&quot; &gt;&lt;/social-links&gt;</pre>
+			</code>
+
+			<social-links style="color: red"></social-links>
+
+			<p>With custom <code>color</code> and <code>background-color</code></p>
+
+			<!-- prettier-ignore -->
+			<code>
+<pre>
+&lt;div style=&quot;background: black&quot;&gt;
+	&lt;social-links style=&quot;color: white&quot;&gt;&lt;/social-links&gt;
+&lt;/div&gt;
+</pre>
+			</code>
+
+			<div style="background: black">
+				<social-links style="color: white"></social-links>
+			</div>
+		</main>
+
+		<script src="dist/index.js"></script>
 	</body>
 </html>
