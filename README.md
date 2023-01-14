@@ -1,3 +1,13 @@
+<!--
+```
+<custom-element-demo>
+  <template>
+    <social-links></social-links>
+  </template>
+</custom-element-demo>
+```
+-->
+
 [![Travis CI](https://travis-ci.com/scriptex/socials.svg?branch=master)](https://travis-ci.com/scriptex/socials)
 [![Github Build](https://github.com/scriptex/socials/workflows/Build/badge.svg)](https://github.com/scriptex/socials/actions?query=workflow%3ABuild)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/34d3d75710534dc6a38c3584a1dcd068)](https://www.codacy.com/gh/scriptex/socials/dashboard?utm_source=github.com&utm_medium=referral&utm_content=scriptex/socials&utm_campaign=Badge_Grade)
