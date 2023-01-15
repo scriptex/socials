@@ -2,7 +2,10 @@
 ```
 <custom-element-demo>
   <template>
-    <social-links></social-links>
+  	<base href="https://raw-dot-custom-elements.appspot.com/scriptex/socials/1.7.0/socials/">
+	<script src="../webcomponentsjs/webcomponents-lite.js"></script>
+	<script src="https://unpkg.com/scriptex-socials"></script>
+	<social-links></social-links>
   </template>
 </custom-element-demo>
 ```
@@ -15,6 +18,7 @@
 [![CodeFactor Badge](https://www.codefactor.io/repository/github/scriptex/socials/badge)](https://www.codefactor.io/repository/github/scriptex/socials)
 [![DeepScan grade](https://deepscan.io/api/teams/3574/projects/5257/branches/40799/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3574&pid=5257&bid=40799)
 [![Analytics](https://ga-beacon-361907.ew.r.appspot.com/UA-83446952-1/github.com/scriptex/socials/README.md?pixel)](https://github.com/scriptex/socials/)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/scriptex-socials)
 
 # Atanas Atanasov's Socials
 
