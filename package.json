@@ -39,7 +39,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@types/node": "18.15.3",
-		"prettier": "2.8.4",
+		"prettier": "2.8.5",
 		"svg-symbol-sprite": "1.4.0",
 		"ts-node": "10.9.1",
 		"typescript": "5.0.2"
