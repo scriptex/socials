@@ -38,7 +38,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@types/node": "20.11.28",
+		"@types/node": "20.11.29",
 		"prettier": "3.2.5",
 		"svg-symbol-sprite": "1.4.1",
 		"ts-node": "10.9.2",
