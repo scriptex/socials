@@ -1,3 +1,16 @@
+<!--
+```
+<custom-element-demo>
+  <template>
+  	<base href="https://raw-dot-custom-elements.appspot.com/scriptex/socials/1.7.0/socials/">
+	<script src="../webcomponentsjs/webcomponents-lite.js"></script>
+	<script src="https://unpkg.com/scriptex-socials"></script>
+	<social-links></social-links>
+  </template>
+</custom-element-demo>
+```
+-->
+
 [![Travis CI](https://travis-ci.com/scriptex/socials.svg?branch=master)](https://travis-ci.com/scriptex/socials)
 [![Github Build](https://github.com/scriptex/socials/workflows/Build/badge.svg)](https://github.com/scriptex/socials/actions?query=workflow%3ABuild)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/34d3d75710534dc6a38c3584a1dcd068)](https://www.codacy.com/gh/scriptex/socials/dashboard?utm_source=github.com&utm_medium=referral&utm_content=scriptex/socials&utm_campaign=Badge_Grade)
@@ -5,6 +18,7 @@
 [![CodeFactor Badge](https://www.codefactor.io/repository/github/scriptex/socials/badge)](https://www.codefactor.io/repository/github/scriptex/socials)
 [![DeepScan grade](https://deepscan.io/api/teams/3574/projects/5257/branches/40799/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3574&pid=5257&bid=40799)
 [![Analytics](https://ga-beacon-361907.ew.r.appspot.com/UA-83446952-1/github.com/scriptex/socials/README.md?pixel)](https://github.com/scriptex/socials/)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/scriptex-socials)
 
 # Atanas Atanasov's Socials
 
