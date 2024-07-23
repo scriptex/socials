@@ -46,6 +46,6 @@
 		"prettier": "3.3.3",
 		"svg-symbol-sprite": "1.5.2",
 		"ts-node": "10.9.2",
-		"typescript": "5.5.3"
+		"typescript": "5.5.4"
 	}
 }
