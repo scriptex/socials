@@ -167,11 +167,14 @@ li svg {
 	height: 1.69rem;
 }
 
+.svg-twitter-x {
+	height: 1.5625rem;
+}
+
 .svg-github,
 .svg-gitlab,
 .svg-linkedin,
-.svg-mastodon,
-.svg-twitter-x {
+.svg-mastodon {
 	height: 1.63rem;
 }
 
