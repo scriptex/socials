@@ -1,6 +1,6 @@
 {
 	"name": "scriptex-socials",
-	"version": "1.8.0",
+	"version": "1.9.0",
 	"description": "A native web component: links to various social media with SVG icons support",
 	"keywords": [
 		"Socials",
@@ -42,8 +42,8 @@
 		"svgo": "^4.0.0"
 	},
 	"devDependencies": {
-		"@types/node": "22.15.33",
-		"prettier": "3.6.0",
+		"@types/node": "24.0.7",
+		"prettier": "3.6.2",
 		"svg-symbol-sprite": "1.5.2",
 		"ts-node": "10.9.2",
 		"typescript": "5.8.3"

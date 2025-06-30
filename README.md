@@ -99,7 +99,11 @@ Currently it includes the following:
 
 <a href="https://gitlab.com/scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/gitlab.svg" alt="See my projects on Gitlab" width="24" align="top"> See my projects on Gitlab</a>
 
-<a href="https://twitter.com/scriptexbg" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/twitter.svg" alt="Follow me on Twitter" width="24" align="top"> Follow me on Twitter</a>
+<a href="https://twitter.com/scriptexbg" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/twitter-x.svg" alt="Follow me on Twitter" width="24" align="top"> Follow me on Twitter</a>
+
+<a href="https://mastodon.social/@scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/mastodon.svg" alt="Follow me on Mastodon Social" width="24" align="top"> Follow me on Mastodon Social</a>
+
+<a href="https://bsky.app/profile/scriptex.bsky.social" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/bluesky.svg" alt="Follow me on Bluesky" width="24" align="top"> Follow me on Bluesky</a>
 
 <a href="https://www.npmjs.com/~scriptex" target="_blank"><img src="https://raw.githubusercontent.com/scriptex/socials/master/styled-assets/npm.svg" alt="See my packages on NPM" width="24" align="top"> See my packages on NPM</a>
 

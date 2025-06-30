@@ -31,8 +31,11 @@ li svg {
 .svg-github,
 .svg-gitlab,
 .svg-twitter,
+.svg-bluesky,
 .svg-codepen,
 .svg-linkedin,
+.svg-mastodon,
+.svg-twitter-x,
 .svg-google-plus,
 .svg-stackoverflow {
 	width: 1.5rem;
@@ -56,9 +59,14 @@ li svg {
 	height: 1.69rem;
 }
 
+.svg-twitter-x {
+	height: 1.5625rem;
+}
+
 .svg-github,
 .svg-gitlab,
-.svg-linkedin {
+.svg-linkedin,
+.svg-mastodon {
 	height: 1.63rem;
 }
 

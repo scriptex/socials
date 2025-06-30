@@ -32,7 +32,19 @@
 	{
 		"url": "https://twitter.com/scriptexbg",
 		"title": "Follow me on Twitter",
-		"icon": "twitter",
+		"icon": "twitter-x",
+		"svg": true
+	},
+	{
+		"url": "https://mastodon.social/@scriptex",
+		"title": "Follow me on Mastodon Social",
+		"icon": "mastodon",
+		"svg": true
+	},
+	{
+		"url": "https://bsky.app/profile/scriptex.bsky.social",
+		"title": "Follow me on Bluesky",
+		"icon": "bluesky",
 		"svg": true
 	},
 	{
