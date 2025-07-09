@@ -186,6 +186,10 @@ li svg {
 	width: 2rem;
 }
 
+.svg-bluesky {
+	height: 1.375rem;
+}
+
 .svg-logo {
 	width: 1.75rem;
 	height: 1.75rem;
