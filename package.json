@@ -42,7 +42,7 @@
 		"svgo": "^4.0.0"
 	},
 	"devDependencies": {
-		"@types/node": "24.0.12",
+		"@types/node": "24.1.0",
 		"prettier": "3.6.2",
 		"svg-symbol-sprite": "1.5.2",
 		"ts-node": "10.9.2",
