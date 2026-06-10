@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node-script
 
-import { join } from 'path';
-import { readFile, readFileSync, writeFile } from 'fs';
+import { join } from 'node:path';
+import { readFile, readFileSync, writeFile } from 'node:fs';
 
 const svgFile: string = join(__dirname, '..', 'data', 'sprite.svg');
 const cssFile: string = join(__dirname, '..', 'data', 'style.css');

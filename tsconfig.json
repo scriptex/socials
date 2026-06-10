@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		"baseUrl": "./",
 		"alwaysStrict": true,
 		"allowSyntheticDefaultImports": true,
 		"allowJs": false,
@@ -11,11 +10,10 @@
 		"forceConsistentCasingInFileNames": true,
 		"importHelpers": true,
 		"noEmitHelpers": true,
-		"jsx": "react",
 		"lib": ["DOM", "ESNext"],
 		"target": "ESNext",
 		"module": "CommonJS",
-		"moduleResolution": "Node",
+		"moduleResolution": "bundler",
 		"noEmit": false,
 		"noEmitOnError": true,
 		"noFallthroughCasesInSwitch": true,
@@ -31,9 +29,11 @@
 		"strictNullChecks": true,
 		"pretty": true,
 		"removeComments": false,
-		"sourceMap": true
+		"rootDir": "src",
+		"sourceMap": true,
+		"types": ["node"]
 	},
 	"compileOnSave": false,
 	"include": ["src/**/*"],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules", "dist"]
 }
