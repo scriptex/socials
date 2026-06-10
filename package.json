@@ -38,12 +38,12 @@
 	},
 	"dependencies": {
 		"cheerio": "^1.0.0-rc.12",
-		"commander": "^14.0.0",
+		"commander": "^15.0.0",
 		"svgo": "^4.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "24.12.4",
-		"prettier": "3.8.3",
+		"prettier": "3.8.4",
 		"svg-symbol-sprite": "1.5.2",
 		"ts-node": "10.9.2",
 		"typescript": "6.0.3"
