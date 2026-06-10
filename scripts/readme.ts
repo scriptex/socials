@@ -1,7 +1,7 @@
 #!/usr/bin/env ts-node-script
 
-import { join } from 'path';
-import { readFileSync, writeFile } from 'fs';
+import { join } from 'node:path';
+import { readFileSync, writeFile } from 'node:fs';
 
 type Link = {
 	url: string;
