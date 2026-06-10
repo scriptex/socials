@@ -15,7 +15,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/34d3d75710534dc6a38c3584a1dcd068)](https://www.codacy.com/gh/scriptex/socials/dashboard?utm_source=github.com&utm_medium=referral&utm_content=scriptex/socials&utm_campaign=Badge_Grade)
 [![CodeFactor Badge](https://www.codefactor.io/repository/github/scriptex/socials/badge)](https://www.codefactor.io/repository/github/scriptex/socials)
 [![DeepScan grade](https://deepscan.io/api/teams/3574/projects/5257/branches/40799/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=3574&pid=5257&bid=40799)
-[![Analytics](hhttps://ga-beacon.atanas.info/api/analytics?account=UA-83446952-1&page=GitHub.com/scriptex/socials&pixel)](https://github.com/scriptex/socials/)
+[![Analytics](https://ga-beacon.atanas.info/api/analytics?account=UA-83446952-1&page=GitHub.com/scriptex/socials&pixel)](https://github.com/scriptex/socials/)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/scriptex-socials)
 
 # Atanas Atanasov's Socials
